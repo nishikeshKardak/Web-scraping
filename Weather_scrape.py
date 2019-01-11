@@ -1,6 +1,6 @@
 #Weather in Pasadena
-#inspired by https://www.dataquest.io/blog/web-scraping-tutorial-python/
-
+#inspired by https://www.dataquest.io/blog/web-scraping-tutorial-python??/
+from bs4 import BeautifulSoup
 import requests
 
 page = requests.get("http://forecast.weather.gov/MapClick.php?lon=-118.15334312304958&lat=34.14724265183901")
@@ -36,11 +36,12 @@ print(temps)
 print(descs)
 
 
-import pandas as pd
+
+"""import pandas as pd
 weather = pd.DataFrame({
-        "period": periods, 
-        "short_desc": short_descs, 
-        "temp": temps, 
+        "period": periods,
+        "short_desc": short_descs,
+        "temp": temps,
         "desc":descs
     })
 
@@ -51,3 +52,4 @@ weather["temp_num"] = temp_nums.astype('int')
 temp_nums
 
 weather["temp_num"].mean()
+"""
