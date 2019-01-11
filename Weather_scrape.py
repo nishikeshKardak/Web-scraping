@@ -35,21 +35,3 @@ print(short_descs)
 print(temps)
 print(descs)
 
-
-
-"""import pandas as pd
-weather = pd.DataFrame({
-        "period": periods,
-        "short_desc": short_descs,
-        "temp": temps,
-        "desc":descs
-    })
-
-weather
-
-temp_nums = weather["temp"].str.extract("(?P<temp_num>\d+)", expand=False)
-weather["temp_num"] = temp_nums.astype('int')
-temp_nums
-
-weather["temp_num"].mean()
-"""
